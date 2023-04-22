@@ -1,0 +1,57 @@
+\item \texttt{ID}: The ID to uniquely identify the response
+\item \texttt{response\_timestamp}: The date and time stamp of the response
+\item \texttt{age}: The age range group that a person belongs to 
+\item \texttt{feature\_learn\_method}: the option that best describes how a person typicall learns about smartphone features
+\item \texttt{autonomy\_avgscore}: The average score between questions to measure autonomy from the TENS-Life questionnaire. Values are negatively scored (the lower the more perceived feeling).
+\item \texttt{competence\_avgscore}: The average score between questions to measure competence from the TENS-Life questionnaire. Values are negatively scored (the lower the more perceived feeling).
+\item \texttt{relatedness\_avgscore}: The average score between questions to measure relatedness from the TENS-Life questionnaire.
+\item \texttt{pressured\_to\_use\_more}: A TENS-Life question to measure autonomy
+\item \texttt{spend\_more\_time\_than\_should}: A TENS-Life question to measure autonomy
+\item \texttt{makes\_me\_do\_unwanted\_things}: A TENS-Life question to measure autonomy
+\item \texttt{life\_intrusive}: A TENS-Life question to measure autonomy
+\item \texttt{more\_ability\_insecurity}: A TENS-Life question to measure competence
+\item \texttt{less\_capable}: A TENS-Life question to measure competence
+\item \texttt{lowered\_confidence}: A TENS-Life question to measure competence
+\item \texttt{belonging\_to\_community}: A TENS-Life question to measure relatedness
+\item \texttt{close\_connect\_important\_persons}: A TENS-Life question to measure relatedness
+\item \texttt{close\_to\_some}: A TENS-Life question to measure relatedness
+\item \texttt{phone\_type}: The smartphone type that a person uses
+\item \texttt{awareness\_flag}: 1=True, 0=False. True if \texttt{awareness\_count} is greater than zero.
+\item \texttt{awareness\_count}: The number of wellbeing features a person is aware of.
+\item \texttt{usage\_flag}: 1=True, 0=False. True if \texttt{usage\_count} is greater than zero.
+\item \texttt{usage\_count}: The number of wellbeing features a person uses.
+\item \texttt{others\_want\_me\_use\_external}: An ACTA question to measure external motivation
+\item \texttt{expected\_interesting\_intrinsic}: An ACTA question to measure intrinsic motivation
+\item \texttt{belief\_life\_improvement\_identified}: An ACTA question to measure identified motivation
+\item \texttt{help\_do\_important\_identified}: An ACTA question to measure identified motivation
+\item \texttt{others\_know\_usage\_introjected}: An ACTA question to measure introjected motivation
+\item \texttt{feel\_bad\_not\_trying\_introjected}: An ACTA question to measure introjected motivation
+\item \texttt{expect\_enjoyable\_intrinsic}: An ACTA question to measure intrinsic motivation
+\item \texttt{required\_usage\_external}: An ACTA question to measure external motivation
+\item \texttt{be\_of\_value\_life\_identified}: An ACTA question to measure identified motivation
+\item \texttt{fun\_to\_use\_intrinsic}: An ACTA question to measure intrinsic motivation
+\item \texttt{pressure\_usage\_external}: An ACTA question to measure external motivation
+\item \texttt{look\_good\_others\_introjected}: An ACTA question to measure introjected motivation
+\item \texttt{iphone\_aware}: The features that a person is aware of for those who selected iPhone from \texttt{phone\_type}
+\item \texttt{iphone\_usage}: The features that a person uses for those who selected iPhone from \texttt{phone\_type}
+\item \texttt{pixel\_aware}: The features that a person is aware of for those who selected Google Pixel from \texttt{phone\_type}
+\item \texttt{pixel\_usage}: The features that a person uses for those who selected Google Pixel from \texttt{phone\_type}
+\item \texttt{other\_aware}: The features that a person is aware of for those who selected Other from \texttt{phone\_type}
+\item \texttt{other\_usage}: The features that a person uses for those who selected Other from \texttt{phone\_type}
+\item \texttt{samsung\_aware}: The features that a person is aware of for those who selected Samsung from \texttt{phone\_type}
+\item \texttt{samsung\_usage}: The features that a person uses for those who selected Samsung from \texttt{phone\_type}
+\item \texttt{age\_encoded}: Encoding of \texttt{age} to be numeric ordinal values.
+\item \texttt{flm\_AnotherPerson}: One hot encode \texttt{feature\_learn\_method}.
+\item \texttt{flm\_CompanyEmail}: One hot encode \texttt{feature\_learn\_method}.
+\item \texttt{flm\_OrganicUsage}: One hot encode \texttt{feature\_learn\_method}.
+\item \texttt{flm\_Proactive}: One hot encode \texttt{feature\_learn\_method}.
+\item \texttt{flm\_SearchAfterUpdate}: One hot encode \texttt{feature\_learn\_method}.
+\item \texttt{flm\_nan}: One hot encode \texttt{feature\_learn\_method}.
+\item \texttt{iphone\_flag}: True if the smartphone a person uses is an iPhone.
+\item \texttt{age\_categorical}: The \texttt{pandas} Categorical data type for \texttt{age}.
+\item \texttt{all\_phone\_feature\_aware}: The features that a person is aware of across all phone types
+\item \texttt{all\_phone\_feature\_usage}: The features that a person uses across all phone types
+\item \texttt{active\_learn\_method\_flag}: 1=True, 0=False. True if the \texttt{feature\_learn\_method} is "OrganicUsage" or "AnotherPerson"
+\item \texttt{autonomous\_regulation\_score}: The average of ACTA questions that are identified or intrinsic
+\item \texttt{controlled\_regulation\_score}: The average of ACTA questions that are external or introjected
+\item \texttt{relative\_autonomy\_index}: \texttt{autonomous\_regulation\_score} minus \texttt{controlled\_regulation\_score}
